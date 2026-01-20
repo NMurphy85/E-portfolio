@@ -23,6 +23,7 @@ button{
 
 .container{
 padding: 50 0;
+width: 100%;
 }
 
 .row{
@@ -275,3 +276,36 @@ transition: opacity 300ms, transform 450ms ease;
 .project__description--para{
     margin: 16px 0 ;
 }
+
+/*
+fFooter
+
+
+*/
+
+footer{
+    background-color: #242424;
+    display: flex;
+    padding: 6% 0;
+}
+
+.footer__row{
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
+.footer__logo--img{
+    width: 70px;
+}
+
+.footer__social--list{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 28px 0;
+}
+.footer__social--link,
+ .footer__copyright{
+    color: white;
+   
+ }
