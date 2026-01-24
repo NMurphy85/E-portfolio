@@ -26,7 +26,7 @@ button {
 
 
 .container {
-  padding: 50 0;
+  padding: 50px 0;
   width: 100%;
 }
 
@@ -48,6 +48,7 @@ button {
 }
 section {
   background-color: rgb(245, 245, 245);
+  transition: all 300ms ease;
 }
 
 input, textarea{
@@ -112,8 +113,8 @@ input:focus, textarea:focus{
 .link__hover--effect-white:after{
     background-color: white;
 }
-.link-hover-effect--black{
-    background-color: white;
+.link-hover-effect--black:after{
+    background-color: #242424
 }
 .blue {
   color: blue;
@@ -177,13 +178,53 @@ input:focus, textarea:focus{
     transform: translateY(-3px);
   }
 }
+
+.dark-theme .title,
+.dark-theme .section__title,
+.dark-theme .section__sub-title,
+.dark-theme .nav__link--anchor,
+.dark-theme .header__para,
+.dark-theme .fa-adjust
+{
+  color:white;
+
+
+}
+
+.dark-theme section{
+  background-color: #242424;
+
+}
+  
+.dark-theme #personal{
+  filter: none;
+}
+
+.dark-theme .scroll__icon{
+  border-color: white;
+}
+.dark-theme .scroll__icon:after,
+.dark-theme .link-hover-effect--black:after{
+background-color: white;
+}
+
+.dark-theme .link__hover--effect-white:after{
+background-color: #242424;
+}
+
+.dark-theme .mail__btn{
+  background-color: white;
+  color: #242424;
+}
 /*
 
 
-Landing page
+ Landing page
+ 
+ */
 
 
-*/
+
 #landing-page {
   min-height: 100vh;
 }
